@@ -21,7 +21,7 @@ public class SwingViewImplementation implements View{
     @Override
     public void showGreeting(String greeting) {
         JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JOptionPane.showMessageDialog(frame, greeting, greeting, JOptionPane.INFORMATION_MESSAGE);
         frame.dispose();
     }

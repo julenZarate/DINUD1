@@ -14,12 +14,10 @@ import Model.Model;
  * Esta es la clase Application para el Hola mundo con capas
  * @author Lander Lluvia
  */
-public class Application {
-
-    /**
-     * @param args the command line arguments
-     */
+public class ApplicationHolaMundo {
+    
     public static void main(String[] args) {
+        
         ViewFactory vf = new ViewFactory();
         View v = vf.getView();
         
@@ -27,7 +25,7 @@ public class Application {
         Model m = mf.getModel();
         
         Controller c = new Controller();
-        c.run(v, m);
+        c.run(v, m); 
         
         
     }

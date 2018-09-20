@@ -12,7 +12,8 @@ import View.View;
  * @author Lander Lluvia
  */
 public class ViewFactory {
+    
     public static View getView(){
-        return new SwingViewImplementation();
+        return new JavaFXViewImplementation();
     }
 }
