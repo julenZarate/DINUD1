@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author 2dam
+ * @author Lander Lluvia
  */
 public class JavaFXViewImplementation extends Application implements View{
 
@@ -21,9 +21,11 @@ public class JavaFXViewImplementation extends Application implements View{
     
     @Override
     public void start(Stage stage) throws Exception {
-        //Carga el archivo fxml
         
+        //Carga el archivo fxml
         FXMLLoader loader = new FXMLLoader(getClass().getResource("FXMLDocument.fxml"));
+        
+        //Define la estructura de padres e hijos
         Parent root = loader.load();
         JavaFXDocumentController dc = loader.getController();
         dc.setGreeting(greeting);
@@ -40,6 +42,10 @@ public class JavaFXViewImplementation extends Application implements View{
     public void showGreeting(String greeting) {
         JavaFXViewImplementation.greeting = greeting;
         launch();
+    }
+    
+    public void setGreeting(String greeting){
+        this.greeting = greeting;
     }
 
 

@@ -18,11 +18,10 @@ import javafx.scene.control.Label;
  * @author Lander Lluvia
  */
 public class JavaFXDocumentController {
-   
-    private  String greeting;
     
     @FXML
     private Label label;
+    private  String greeting;
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
